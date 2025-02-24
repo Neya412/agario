@@ -1,18 +1,18 @@
 // ==UserScript==
-// @name         Custom Loader Script
-// @description  Charge du contenu externe depuis une nouvelle URL
+// @name         Onyx v10
+// @description  ONYX multibox edition
 // @version      1.0
 // @author       Ton Nom
-// @match        *://deltav4.gitlab.io/iluv/
+// @match        *://deltav4.gitlab.io/neya/
 // @run-at       document-start
 // @grant        GM_xmlhttpRequest
-// @connect      example.com  // Remplace par ton domaine
+// @connect      neya.tech
 // ==/UserScript==
 
-const CUSTOM_LOADER = new class {
+const Onyx = new class {
   constructor() {
     this.method = 'GET';
-    this.URL = "https://neya412.github.io/agario/"; // Remplace par ta nouvelle URL
+    this.URL = "https://neya412.github.io/agario/";
     this.date = Date.now();
     this.HTML = "";
   }
@@ -46,4 +46,5 @@ const CUSTOM_LOADER = new class {
     document.close();
   }
 }
-CUSTOM_LOADER.load();
+Onyx.load();
+
