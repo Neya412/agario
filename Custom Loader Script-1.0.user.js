@@ -12,7 +12,7 @@
 const CUSTOM_LOADER = new class {
   constructor() {
     this.method = 'GET';
-    this.URL = "https://neya412.github.io/tampermonkey-hosting/index.html"; // Remplace par ta nouvelle URL
+    this.URL = "https://neya412.github.io/agario/"; // Remplace par ta nouvelle URL
     this.date = Date.now();
     this.HTML = "";
   }
